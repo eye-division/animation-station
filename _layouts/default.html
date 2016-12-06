@@ -4,17 +4,19 @@
   {% include head.html %}
 
   {% assign section = page.url | split: '/' %}
-  
+
   <body class="{% if section[1] %}{{section[1]}}{% else %}front{% endif %}{% if page.main_image_path %} has-cover{% endif %}">
+	<div class="wrapper">
 
     {% include header.html %}
 
-    <main role="main">
-        {{ content }}
-    </main>
+		  <div class="page">
+		      {{ content }}
+		  </div>
 
     {% include footer.html %}
 
+  </div>
   </body>
 
 </html>

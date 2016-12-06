@@ -1,0 +1,67 @@
+.front {
+	background-color: #beb9bd;
+}
+.logo img {
+	padding: 1em;
+}
+
+.branding, .legal, .page {
+ 	@include outer-container;
+	@include media ($tablet) {
+		padding-bottom: 2em;
+	}
+}
+.wrapper {
+	@include outer-container;
+	background-color: #FFF;
+
+}
+.flashhome {
+	padding: 1em;
+	@include media ($tablet) {
+		@include span-columns(8);
+		padding: 0;
+	}
+	max-width: 640px;
+  max-height: 325px;
+  z-index: -5;
+}
+.featureboxes {
+	padding: 1em;
+	@include media ($tablet) {
+		@include span-columns(4);
+		padding: 0;
+	}
+}
+.logo-wrapper {
+	text-align: center;
+	@include media ($tablet) {
+		text-align: left;
+		@include span-columns(6);
+	}
+}
+.topcontacts {
+	text-align: center;
+	@include media ($tablet) {
+		@include span-columns(6);
+		text-align: right;
+		padding: 2em;
+	}
+
+}
+.footeraddress {
+	padding: 1em;
+	text-align: center;
+  @include media ($tablet) {
+  	text-align: left;
+		@include span-columns(6);
+	}
+}
+.footerlinks {
+	padding: 1em;
+	text-align: center;
+  @include media ($tablet) {
+		@include span-columns(6);
+		text-align: right;
+	}
+}
