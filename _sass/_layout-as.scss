@@ -18,13 +18,11 @@
 }
 .flashhome {
 	padding: 1em;
+	text-align: center;
 	@include media ($tablet) {
 		@include span-columns(8);
 		padding: 0;
 	}
-	max-width: 640px;
-  max-height: 325px;
-  z-index: -5;
 }
 .featureboxes {
 	padding: 1em;
