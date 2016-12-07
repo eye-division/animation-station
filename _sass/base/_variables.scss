@@ -28,14 +28,37 @@ $light-gray: #ddd;
 $blue: #2980b9;
 $background-grey: #373535;
 $white: #fff;
-
+$black: #111;
 $purple: #4B2475;
-
+$pink: #e21069;
 // Font Colors
 $base-background-color: #fff;
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $purple;
 $highlight-color: tint($action-color, 33%);
+
+/* SASS / Social Media Brand Colors */
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #1ab7ea;
+$tumblr: #32506d;
+$instagram: #bc2a8d;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
 
 // Border
 $base-border-color: $light-gray;

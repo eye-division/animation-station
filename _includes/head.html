@@ -67,26 +67,11 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <!-- Header image from page -->
-  {% if page.main_image_path %}
-  <style>
-    #content-header {
-      background-image: url("{% include imgpath.html src=page.main_image_path width=640 height=480 %}") !important;
-    }
-    @media screen and (min-width: 960px) {
-      #content-header {
-        background-image: url("{% include imgpath.html src=page.main_image_path width=1600 height=800 %}") !important;
-      }
-    }
-  </style>
-  {% endif %}
 
   <!-- Scripts -->
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="/js/drupal.js"></script>
-<script type="text/javascript" src="/js/extlink.js"></script>
-<script src="/js/swfobject2.js" language="javascript" type="text/javascript"></script>
-<script type="text/javascript">Drupal.extend({ settings: { "extlink": { "extTarget": 0, "extClass": "ext", "extSubdomains": 1, "mailtoClass": "mailto" } } });</script>
+
+
+{% include svg/symbol-defs.svg %}
 
 {% if site.ga_tracking_id %}
 <!-- Google Analytics -->

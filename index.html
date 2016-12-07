@@ -1,26 +1,29 @@
 ---
 layout: default
-main_image_path: /assets/mouselogo.jpg
+main_image_path: /assets/mouse-front.jpg
 ---
 
-<div class="flashhome">  <!-- flash mouse movie -->
-  <!-- <object type="application/x-shockwave-flash" name="mediaplayer" id="mediaplayer" data="/js/player2.swf" width="100%" height="325"><param name="allowfullscreen" value="false"><param name="allowscriptaccess" value="always"><param name="wmode" value="opaque"><param name="flashvars" value="file=/assets/flashhome.flv&amp;image=/assets/mouseMovieStill.jpg&amp;controlbar=none&amp;autostart=true&amp;backcolor=FFFFFF&amp;screencolor=FFFFFF&amp;icons=false"></object>
-  -->
-  {% include img.html src=page.main_image_path width=400 height=400 alt=page.main_image_description  %}
+<div class="flashhome">
+
+  <p>Xmas School Programme 2016</p>
+  <p><a href="assets/AS_XMas_ExeterHall_20161.pdf" class="readmore"">Download <svg class="icon icon--readmore"><use xlink:href="#icon-double_angle_right" /></svg></a></p>
+
+  {% if page.main_image_path %}
+  <p>
+  {% include img.html src=page.main_image_path alt=page.main_image_description  %}
+  </p>
+  {% endif %}
 </div>
 
         <!-- /content -->
 <div class="featureboxes">
 
-  <h1>Animation Station</h1>
+  <p class="strapline">The Animation Station is an inclusive arts organisation which aims to animate young hearts and minds through the use of animation and digital moving image in relation to new technology, artists and the community.</p>
 
-  <p>The Animation Station is an inclusive arts organisation which aims to animate young hearts and minds through the use of animation and digital moving image in relation to new technology, artists and the community.</p>
   <p>Based on the borders of Northamptonshire, Oxfordshire and Warwickshire in Banbury, it delivers core programmes of activities with schools, community groups, colleges and arts organisations embedding creativity, excellence and aspiration at the heart of its programme.</p>
+
   <p>Animation Station is managed by Clinton Osborne with a professional network of associate artists and support from schools, the community, local authorities and grant funding. </p>
 
-  <h2>Download our Christmas School Programme 2016</h2>
-      <ul>
-          <li><a href="assets/AS_XMas_ExeterHall_20161.pdf">Exeter Hall, Kidlington 2016</a></li>
-      </ul>
-  <p>See us on <a href="http://www.youtube.com/user/animationstationuk">YouTube</a></p>
+  <p class="text-center">See us on <a href="http://www.youtube.com/user/animationstationuk"><svg class="icon icon-youtube"><use xlink:href="#icon-youtube" /></svg></a></p>
+  <p class="text-center">Catch up with us on <a href="https://twitter.com/ani_station"><svg class="icon icon-twitter_sign"><use xlink:href="#icon-twitter_sign" /></svg></a></p>
 </div>

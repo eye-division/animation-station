@@ -1,3 +1,107 @@
+
+/* ANIMSTATION STATION */
+
+html {
+     background: #d7d2d2 url(/assets/bg_grad.gif) top repeat-x fixed;
+}
+
+body {
+	//font: 0.6em/1.5 Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0.5em 0em;
+  font-weight: normal;
+  color: $action-color;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 1em 0;
+  font-weight: normal;
+  color: $pink;
+  line-height: 1.1em;
+}
+
+
+h3 {
+  font-size: 0.8em;
+  margin: 0em 0em 0em 0em;
+  font-weight: bold;
+  color: $light-gray;
+}
+
+
+p {
+  margin: 0.5em 0em;
+  color: $dark-gray;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: $purple;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: $purple;
+}
+
+.text-center {
+	text-align: center;
+}
+// Buttons
+
+.readmore{
+    @extend button;
+    @include bbb-flat-style(darken($action-color, 5%), $white);
+    @include bbb_size (3);
+    font-size: modular-scale(2);
+    &:hover:not(:disabled) {
+        color: lighten($action-color, 50%);
+        background: darken($action-color, 15%);
+        @include transition (background 0.2s ease-in-out);
+        text-decoration: none;
+  }
+}
+// Icons
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+a:hover .icon { /* hover colour */
+    fill: $action-color;
+}
+
+.icon--readmore {
+    fill: $white;
+    margin-bottom: -5px;
+    width: 40px;
+    height: 40px;
+}
+a:hover .icon--readmore {
+	fill: lighten($action-color, 50%);
+}
+
+.icon-youtube, .icon-twitter_sign {
+	width: 60px;
+  height: 60px;
+}
+
+
+.icon-twitter_sign { fill: $twitter; }
+.icon-youtube { fill: $youtube; }
+
 .front {
 	background-color: #beb9bd;
 }
@@ -7,59 +111,67 @@
 
 .branding, .legal, .page {
  	@include outer-container;
-	@include media ($tablet) {
-		padding-bottom: 2em;
-	}
 }
 .wrapper {
 	@include outer-container;
 	background-color: #FFF;
-
 }
+
 .flashhome {
 	padding: 1em;
 	text-align: center;
-	@include media ($tablet) {
-		@include span-columns(8);
-		padding: 0;
-	}
 }
+
 .featureboxes {
 	padding: 1em;
-	@include media ($tablet) {
-		@include span-columns(4);
-		padding: 0;
-	}
 }
+
 .logo-wrapper {
 	text-align: center;
-	@include media ($tablet) {
-		text-align: left;
-		@include span-columns(6);
-	}
 }
+
 .topcontacts {
 	text-align: center;
-	@include media ($tablet) {
-		@include span-columns(6);
-		text-align: right;
-		padding: 2em;
-	}
+}
 
+.booking {
+	padding: 1em 0;
+	font-size: modular-scale(2);
+	line-height: 1.2em;
+	color: $action-color;
+	font-weight: bold;
+}
+
+/*
+* FOOTER
+*/
+
+.legal {
+  padding: 0;
+  text-align: center;
+  border-top: 0px solid $black;
+  @include linear-gradient($purple 0%, $purple 80%, darken($purple, 10%) 100%);
+}
+
+.legal p {
+  color: #fff;
+}
+.legal a {
+  color: #fff;
+	&:hover {
+		color: lighten($action-color, 50%)
+	}
 }
 .footeraddress {
 	padding: 1em;
 	text-align: center;
-  @include media ($tablet) {
-  	text-align: left;
-		@include span-columns(6);
-	}
+
 }
 .footerlinks {
 	padding: 1em;
 	text-align: center;
-  @include media ($tablet) {
-		@include span-columns(6);
-		text-align: right;
-	}
+}
+
+.footerlinks strong{
+  font-weight: bold;
 }

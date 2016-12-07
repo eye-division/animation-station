@@ -69,15 +69,15 @@ ga_tracking_id: "UA-88562946-1"
 #     share: true                           # Include in the "Share" section of posts
 social:
   - name: Twitter
-    icon: twitter
-    username: EyeDivision
-    url:
+    icon: icon-twitter_sign
+    username: Ani_Station
+    url: https://twitter.com/ani_station
     desc: Follow us on Twitter
     share: true
 
   - name: Facebook
     icon: facebook
-    username: eyedivision
+    username:
     url:
     desc: Like us on Facebook
     share: true
@@ -97,9 +97,9 @@ social:
     share: true
 
   - name: YouTube
-    icon: youtube
-    username:
-    url:
+    icon: icon-youtube
+    username: animationstationuk
+    url: https://www.youtube.com/user/animationstationuk
     desc: Subscribe on YouTube
     share: false
 
