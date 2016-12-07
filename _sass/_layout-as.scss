@@ -1,12 +1,9 @@
 
 /* ANIMSTATION STATION */
 
-html {
-     background: #d7d2d2 url(/assets/bg_grad.gif) top repeat-x fixed;
-}
 
 body {
-	//font: 0.6em/1.5 Verdana, Arial, Helvetica, sans-serif;
+	@include linear-gradient(lighten($action-color, 90%) 0%, lighten($action-color, 60%) 80%, lighten($action-color, 50%) 100%);
 	color: #000;
 }
 
@@ -63,14 +60,13 @@ a:hover, a:active, a:focus {
 
 .readmore{
     @extend button;
-    @include bbb-flat-style(darken($action-color, 5%), $white);
-    @include bbb_size (3);
-    font-size: modular-scale(2);
+    //@include bbb-simple-style(lighten($action-color, 55%), $action-color);
+    @include bbb-flat-style(lighten($action-color, 55%), $action-color);
+    //@include bbb_3D_style(darken($action-color, 5%), $white, 2px);
+    @include bbb_size (1);
+    font-size: modular-scale(1);
     &:hover:not(:disabled) {
-        color: lighten($action-color, 50%);
-        background: darken($action-color, 15%);
-        @include transition (background 0.2s ease-in-out);
-        text-decoration: none;
+        color: darken($action-color, 20%);
   }
 }
 // Icons
@@ -84,13 +80,13 @@ a:hover .icon { /* hover colour */
 }
 
 .icon--readmore {
-    fill: $white;
+    fill: $action-color;
     margin-bottom: -5px;
     width: 40px;
     height: 40px;
 }
 a:hover .icon--readmore {
-	fill: lighten($action-color, 50%);
+	fill: darken($action-color, 20%);
 }
 
 .icon-youtube, .icon-twitter_sign {
@@ -102,9 +98,7 @@ a:hover .icon--readmore {
 .icon-twitter_sign { fill: $twitter; }
 .icon-youtube { fill: $youtube; }
 
-.front {
-	background-color: #beb9bd;
-}
+
 .logo img {
 	padding: 1em;
 }
@@ -123,6 +117,8 @@ a:hover .icon--readmore {
 }
 
 .featureboxes {
+	margin: 0 auto;
+	max-width: 42em;
 	padding: 1em;
 }
 
