@@ -1,9 +1,10 @@
 # External gems
-gems:
-  - jekyll-sitemap
+plugins:
+ # - jekyll-archives # Sorry, not GitHub pages friendly!
+ # - jekyll-assets
+ # - autoprefixer-rails
+   - jekyll-sitemap
 
-exclude:
-  - "/vendor/"
 
 # Site settings
 title: Animation Station
@@ -21,9 +22,6 @@ email: animation.station@chenderit.northants.sch.uk
 
 # Build settings
 markdown: kramdown
-paginate: 5
-paginate_path: "/page:num/"
-inter_post_navigation: false
 permalink: pretty
 
 # Image CDN
